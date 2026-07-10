@@ -33,7 +33,9 @@ constituting the Communication Inclusion Framework (CIF):
 ## Repository Structure
 - /data — anonymized rating dataset
 - /analysis — Bayesian analysis notebook
-- /visualizations — all figures from the paper
+- /outputs — all figures from the paper
+- /rating — rating sheets
+  - /scripts — query models, templates
 - /qualitative — CIF coding sheet
 - /prompts — prompt library
 
