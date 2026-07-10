@@ -18,8 +18,8 @@ Performance is evaluated across five dimensions grounded in assistive technology
 constituting the Communication Inclusion Framework (CIF):
 ### Authors
 - Kehinde Soetan (lead researcher)
-- [Rhoda Oladosu] — [@RhodaOladosu]
-- [Precious Aforkeoghene]
+- Rhoda Oladosu — [@RhodaOladosu]
+- Precious Aforkeoghene
 - Jesujoba Olanrewaju
 
 ### Study Design
