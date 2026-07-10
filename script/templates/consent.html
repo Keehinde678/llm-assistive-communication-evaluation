@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informed Consent Evaluating Large Language Models as Assistive Tools for People with Communication and Intellectual Disabilities </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1>LLM Assistive Task Evaluation</h1>
+    <p>Informed Consent Form</p>
+  </div>
+  <div class="card">
+    <h2>Participant Information and Consent</h2>
+    <p class="subtitle">Please read the following information carefully before proceeding.</p>
+    {% if error %}
+      <div class="error-msg">{{ error }}</div>
+    {% endif %}
+    <div class="consent-section">
+      <h3>Purpose of the Study</h3>
+      <p>This study evaluates how effectively three frontier large language models perform assistive tasks for people with communication and cognitive disabilities. You are invited to participate as an expert evaluator. Your ratings will contribute to the first systematic comparative audit of LLM performance across disability-specific assistive task categories.</p>
+    </div>
+    <div class="consent-section">
+      <h3>What You Will Be Asked to Do</h3>
+      <p>You will be shown 60 prompts designed for people with communication and cognitive disabilities, along with responses from three LLMs labelled Model A, Model B, and Model C. For each prompt you will rate all three responses across five dimensions using a 1 to 5 scale. At the end you will download your ratings as a CSV file.</p>
+    </div>
+    <div class="consent-section">
+      <h3>Time Commitment</h3>
+      <p>The evaluation is estimated to take between 90 and 120 minutes. You may complete it in one sitting or take breaks as needed.</p>
+    </div>
+    <div class="consent-section">
+      <h3>Data Usage and Confidentiality</h3>
+      <p>Your name, institution, and expertise will be recorded alongside your ratings for inter-rater reliability reporting. Individual ratings will not be published. Only aggregated findings will appear in the research output. Your data will be stored securely and used solely for this project.</p>
+    </div>
+    <div class="consent-section">
+      <h3>Right to Withdraw</h3>
+      <p>Your participation is entirely voluntary. You may withdraw at any time without any negative consequences. If you wish to withdraw after submission, contact the researcher and your data will be removed.</p>
+    </div>
+    <div class="consent-section">
+      <h3>Contact</h3>
+      <p>If you have any questions please contact the researcher at the email address provided in your invitation.</p>
+    </div>
+    <form method="POST" action="/consent">
+      <div class="consent-check">
+        <label class="check-label">
+          <input type="checkbox" name="agreed" value="yes" required>
+          <span>I have read and understood the information above. I agree to participate voluntarily. I understand I can withdraw at any time.</span>
+        </label>
+      </div>
+      <div class="field" style="margin-top: 16px;">
+        <label for="signature">Type your full name as your digital signature <span class="required">*</span></label>
+        <input type="text" id="signature" name="signature" placeholder="e.g. Dr. Jane Smith">
+      </div>
+      <button type="submit" class="btn-primary">I consent — proceed to evaluation →</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+LLM Assistive Task Evaluation
+Disability-Inclusive AI Research  ·  Blinded Comparative Evaluation  ·  60 Prompts
+
+Before you begin
+Please enter your details. This will be included in your ratings file.
+
+{% if error %}
+{{ error }}
+{% endif %}
+Full name * 
+e.g. Dr. Jane Smith
+Area of expertise * 
+— Select your area —
+Institution (optional) 
+e.g. University of...
+What to expect
+Rate 60 LLM-generated outputs across 5 dimensions
+Models are labelled A, B, C — identities are blinded
+Estimated time: 90–120 minutes
+You can go back and change ratings at any time
+Your ratings download as a CSV file at the end
+Start evaluation →

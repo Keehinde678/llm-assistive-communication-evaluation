@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt {{ idx + 1 }} of {{ total }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>LLM Assistive Task Evaluation</h1>
+    <p>{{ evaluator.name }} &nbsp;·&nbsp; {{ evaluator.expertise }}</p>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="progress-wrap">
+    <div class="progress-bg">
+      <div class="progress-fill" style="width: {{ percent }}%"></div>
+    </div>
+    <p class="progress-label">
+      Prompt {{ idx + 1 }} of {{ total }} &nbsp;·&nbsp; {{ percent }}% complete
+    </p>
+  </div>
+
+  <!-- All ratings submitted inside one form -->
+  <form method="POST" action="/evaluate" id="evalForm">
+
+    <!-- SECTION 1: Prompt display -->
+    <div class="card prompt-card">
+      <div class="prompt-meta">
+        <span class="badge {{ 'badge-comm' if prompt.category == 'communication' else 'badge-cog' }}">
+          {{ prompt.category | title }} &nbsp;·&nbsp; {{ prompt.disability }}
+        </span>
+        <span class="prompt-id">{{ prompt.task }} &nbsp;·&nbsp; {{ prompt.id }}</span>
+      </div>
+      <p class="prompt-text">{{ prompt.prompt }}</p>
+      <span class="context-tag">{{ prompt.context }}</span>
+    </div>
+
+    <!-- SECTION 2: Rubric reminder (collapsible) -->
+    <details class="rubric-details">
+      <summary>View rating rubric</summary>
+      <div class="rubric-grid">
+        {% for dim in dims %}
+        <div class="rubric-item">
+          <strong>{{ dim }}</strong>
+          {% if dim == 'Clarity' %}
+            How clear and simple is the output for the target user?
+          {% elif dim == 'Appropriateness' %}
+            Is the language and tone suitable for this disability context?
+          {% elif dim == 'Accuracy' %}
+            Is the output factually correct and true to the prompt?
+          {% elif dim == 'Consistency' %}
+            Is the style and register consistent throughout?
+          {% elif dim == 'Empathy' %}
+            Does the output respect the user's dignity and autonomy?
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </details>
+
+    <!-- SECTION 3: Three model blocks with star ratings -->
+    <!--
+      We loop over all three models.
+      model_key  = the key in the prompt dict  (model_a, model_b, model_c)
+      label      = what evaluators see          (Model A, Model B, Model C)
+      prefix     = the form field prefix        (a, b, c)
+      css_label  = CSS class for colour coding  (label-a, label-b, label-c)
+    -->
+    {% for model_key, label, prefix, css_label in [
+        ('model_a', 'Model A', 'a', 'label-a'),
+        ('model_b', 'Model B', 'b', 'label-b'),
+        ('model_c', 'Model C', 'c', 'label-c')
+    ] %}
+
+    <!-- get saved ratings for this model, default to all zeros -->
+    {% set saved_scores = saved.get(model_key, [0,0,0,0,0]) if saved else [0,0,0,0,0] %}
+
+    <div class="model-block">
+
+      <!-- Model label banner -->
+      <div class="model-label {{ css_label }}">{{ label }}</div>
+
+      <!-- Model output text -->
+      <div class="model-output">{{ prompt[model_key] }}</div>
+
+      <!-- Star rating row — one column per dimension -->
+      <div class="ratings-row">
+        {% for d in range(5) %}
+        {% set current_val = saved_scores[d] %}
+        <div class="rating-cell">
+
+          <span class="dim-label">{{ dims[d] }}</span>
+
+          <!-- Five clickable stars -->
+          <div class="stars" id="stars-{{ prefix }}-{{ d }}">
+            {% for v in range(1, 6) %}
+            <span class="star {% if current_val >= v %}lit{% endif %}"
+                  data-val="{{ v }}"
+                  onclick="setStar('{{ prefix }}', {{ d }}, {{ v }})">★</span>
+            {% endfor %}
+          </div>
+
+          <!--
+            Hidden input — this is what actually gets submitted in the form.
+            JavaScript updates the value when a star is clicked.
+            Named a_0, a_1 ... a_4 for Model A (prefix=a)
+          -->
+          <input type="hidden"
+                 id="input-{{ prefix }}-{{ d }}"
+                 name="{{ prefix }}_{{ d }}"
+                 value="{{ current_val }}">
+
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+    {% endfor %}
+
+    <!-- SECTION 4: Notes box -->
+    <div class="notes-box">
+      <label for="notes">Notes (optional) — patterns, concerns, observations</label>
+      <textarea name="notes"
+                id="notes"
+                placeholder="Add notes here...">{{ saved.notes if saved and saved.notes is defined else '' }}</textarea>
+    </div>
+
+    <!-- Validation warning — shown by JavaScript if ratings are missing -->
+    <p class="warn" id="warn">
+      Please rate all 5 dimensions for all 3 models before continuing.
+    </p>
+
+    <!-- SECTION 5: Navigation buttons -->
+    <div class="nav">
+
+      <!-- Back button — disabled on first prompt -->
+      <button type="submit"
+              name="action"
+              value="back"
+              class="btn-secondary"
+              {% if idx == 0 %}disabled{% endif %}>
+        ← Back
+      </button>
+
+      <!-- Next or Submit depending on whether this is the last prompt -->
+      {% if idx == total - 1 %}
+        <button type="submit"
+                name="action"
+                value="submit"
+                class="btn-primary"
+                onclick="return validateRatings()">
+          Submit all ratings ↗
+        </button>
+      {% else %}
+        <button type="submit"
+                name="action"
+                value="next"
+                class="btn-primary"
+                onclick="return validateRatings()">
+          Next prompt →
+        </button>
+      {% endif %}
+
+    </div>
+
+  </form>
+</div>
+
+<script>
+  // ── setStar ─────────────────────────────────────────────────────────────
+  // Called when evaluator clicks a star.
+  // Updates the hidden input value and re-renders the star colours.
+  function setStar(prefix, dim, val) {
+
+    // Update the hidden input that the form submits
+    document.getElementById('input-' + prefix + '-' + dim).value = val;
+
+    // Re-render star colours for this row
+    var row = document.getElementById('stars-' + prefix + '-' + dim);
+    var stars = row.querySelectorAll('.star');
+    stars.forEach(function(star) {
+      if (parseInt(star.dataset.val) <= val) {
+        star.classList.add('lit');
+      } else {
+        star.classList.remove('lit');
+      }
+    });
+  }
+
+  // ── validateRatings ─────────────────────────────────────────────────────
+  // Called before form submits.
+  // Returns false (blocks submit) if any of the 15 ratings are still 0.
+  function validateRatings() {
+    var prefixes = ['a', 'b', 'c'];
+
+    for (var p = 0; p < prefixes.length; p++) {
+      for (var d = 0; d < 5; d++) {
+        var input = document.getElementById('input-' + prefixes[p] + '-' + d);
+        if (!input || parseInt(input.value) === 0) {
+          // Show warning message
+          document.getElementById('warn').style.display = 'block';
+          // Scroll to the first unrated star row
+          var starRow = document.getElementById('stars-' + prefixes[p] + '-' + d);
+          if (starRow) {
+            starRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          return false; // blocks the form from submitting
+        }
+      }
+    }
+
+    return true; // all rated — allow form to submit
+  }
+</script>
+
+</body>
+</html>

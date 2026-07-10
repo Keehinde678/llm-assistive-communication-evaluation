@@ -1,0 +1,851 @@
+prompt_id,category,disability_type,task_type,prompt_text,notes,gpt4_output,gpt4_error,claude_output,claude_error,groq_output,groq_error,timestamp
+P001,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I want to go...'",Basic wants/needs,'I want to go to the park today because it's such nice weather.',,"Here are a few natural completions depending on context:
+
+- **""I want to go to the bathroom.""**
+- **""I want to go home now.""**
+- **""I want to go outside for some fresh air.""**
+
+Would you like me to suggest options for a specific situation (mealtime, social outing, medical appointment, etc.)?",,I want to go to the park with my friends and play on the swings. Can we leave soon so we can have plenty of time to have fun?,,2026-05-26T19:18:46.415364
+P002,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I feel...'",Emotional expression,'I feel excited about the upcoming vacation and can't wait to explore new places.',,"Here are a few natural completions depending on the context:
+
+- ""I feel tired today and need a break.""
+- ""I feel happy to see you.""
+- ""I feel like something is wrong.""
+- ""I feel hungry right now.""
+
+Would you like me to offer options for a specific situation or emotion?",,I feel happy and excited to be spending time with my friends today. It's always great to catch up and have some fun together.,,2026-05-26T19:18:54.788823
+P003,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'Can you help me with...'",Requesting assistance,'my homework? I'm having a hard time understanding the math problems.',,"Here are a few natural completions depending on context:
+
+- ""Can you help me with **finding what I need?**""
+- ""Can you help me with **this, please?**""
+- ""Can you help me with **getting something from the shelf?**""
+- ""Can you help me with **my order?**""
+
+**Most versatile option:** ""Can you help me with **something?**""
+
+Would you like me to tailor this to a specific situation (shopping, at home, medical appointment, etc.)?",,"Can you help me with finding my schedule for the day, I need to know what time my appointment is.",,2026-05-26T19:19:03.944248
+P004,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I am hungry and...'",Food/basic needs,'would like to have some lunch now. Can we prepare a sandwich together?',,"Here are a few natural completions depending on the context:
+
+**""I am hungry and would like something to eat, please.""**
+
+or
+
+**""I am hungry and could use a snack.""**
+
+or
+
+**""I am hungry and wondering what's for dinner.""**
+
+Would you like me to offer options for a more specific situation (like at a restaurant, at home, or at school)?",,"'I am hungry and I would like to order a sandwich, can we go to the kitchen to make one?'",,2026-05-26T19:19:13.274833
+P005,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'My name is...'",Self-introduction,"'My name is John Smith, nice to meet you.'",,"Here are a few natural completions depending on the context:
+
+**For an introduction:**
+""My name is [name], and it's nice to meet you.""
+
+**For a more detailed introduction:**
+""My name is [name], and I use this device to communicate.""
+
+Would you like me to adjust the tone or add specific details?",,"My name is Emily, and I'm excited to meet you. I'll be using this device to help me communicate with you today.",,2026-05-26T19:19:20.981812
+P006,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I am in pain and...'",Daily needs/pain,need immediate medical attention. Can someone please call a doctor?,,"Here are a few possible completions depending on the context:
+
+**Medical/urgent:**
+- ""I am in pain and need help right now.""
+- ""I am in pain and need my medication.""
+
+**Descriptive:**
+- ""I am in pain and it's in my [head/back/stomach].""
+- ""I am in pain and it's getting worse.""
+
+**Request:**
+- ""I am in pain and would like to see a doctor.""
+
+Would you like me to offer options for a specific situation?",,"I am in pain and I need some help finding a comfortable position, can you assist me with adjusting my pillow or getting a blanket?",,2026-05-26T19:19:29.376054
+P007,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I need to use the bathroom...'",Daily needs/personal care,'...so could you please guide me to the nearest one?',,"Here are a few natural completions depending on the context:
+
+**Urgent/immediate:**
+""I need to use the bathroom right now, please.""
+
+**Asking for assistance:**
+""I need to use the bathroom—can you help me get there?""
+
+**Polite request:**
+""I need to use the bathroom. Could we take a break?""
+
+Would you like me to adjust the tone or add more specific details?",,"'I need to use the bathroom, could you please help me get there or provide a commode?' This way, I can take care of my needs as soon as possible.",,2026-05-26T19:19:37.099785
+P008,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I am tired and...'",Daily needs/rest,I need to rest for a while.,,"Here are a few possible completions depending on the context:
+
+- ""I am tired and **would like to rest now.**""
+- ""I am tired and **need a break, please.**""
+- ""I am tired and **want to go home.**""
+- ""I am tired and **don't feel like talking right now.**""
+
+Would any of these work, or would you like a different option?",,"I am tired and need to take a rest, can we finish this activity later? I would like to sit down and have a break for a little while to recharge.",,2026-05-26T19:19:44.699574
+P009,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I am thirsty and...'",Daily needs/basic needs,"would like a glass of water, please.",,"Here are a few natural completions depending on the context:
+
+**""I am thirsty and would like something to drink, please.""**
+
+or
+
+**""I am thirsty and need a glass of water.""**
+
+Would you like me to offer a different option based on a specific situation?",,"'I am thirsty and I would like a glass of water, please.'",,2026-05-26T19:19:52.815591
+P010,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I am happy because...'",Social/emotional positive,'I am happy because I passed my exams with flying colors.',,"Here are a few natural completions depending on context:
+
+- ""I am happy because **today is going well and I'm enjoying spending time with you.**""
+
+- ""I am happy because **I get to do something I really like.**""
+
+- ""I am happy because **the weather is nice today.**""
+
+Would you like me to offer options that fit a specific situation, like being at home, school, work, or with friends?",,"I am happy because I got to spend time with my friends and family over the weekend. It was a really fun and relaxing break, and I'm feeling refreshed and energized now.",,2026-05-26T19:19:59.726250
+P011,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I am scared and...'",Social/emotional fear,I need someone to stay with me right now. Can you please help me calm down?,,"Here are a few possible completions depending on the context:
+
+**If seeking help:**
+""I am scared and I need someone to stay with me right now.""
+
+**If expressing feelings:**
+""I am scared and I don't know what to do.""
+
+**If explaining a situation:**
+""I am scared and I need you to help me feel safe.""
+
+Would any of these work, or would you like a different completion?",,"I am scared and I don't know what's going to happen, can you please stay with me and help me feel safe.",,2026-05-26T19:20:07.913435
+P012,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I miss my...'",Social/emotional connection,'I miss my hometown and the familiar comfort it brings.',,"Here are a few possible completions depending on context:
+
+- ""I miss my **family and wish I could see them soon.**""
+- ""I miss my **home and the way things used to be.**""
+- ""I miss my **friend. Can we talk about them?**""
+
+Would any of these work, or would you like me to suggest something different?",,"I miss my family and friends, and I wish I could see them soon.",,2026-05-26T19:20:17.239441
+P013,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I want to talk to...'",Social/emotional connection,'I want to talk to my doctor about my recent test results.',,"Here are a few natural completions depending on the context:
+
+- ""I want to talk to **you about something important.**""
+- ""I want to talk to **someone who can help me.**""
+- ""I want to talk to **my doctor/nurse/family member.**""
+
+Would you like me to offer options for a specific situation (medical, social, requesting help, etc.)?",,"""I want to talk to my mom about the plans for the weekend. Can you help me call her or send a message?""",,2026-05-26T19:20:25.313678
+P014,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'My doctor said...'",Healthcare/medical information,'My doctor said my recovery is going well and I should continue with the prescribed medication for another week.',,"Here are a few possible completions depending on the context:
+
+**Health update:**
+- ""My doctor said everything looks good at my checkup.""
+
+**Sharing instructions:**
+- ""My doctor said I need to take my medication with food.""
+
+**Requesting accommodation:**
+- ""My doctor said I should rest more, so I need to take a break.""
+
+Would you like me to adjust any of these or suggest something more specific to your situation?",,My doctor said I need to take it easy for the next few days and follow the medication schedule as prescribed. I also have a follow-up appointment scheduled for next week to check on my progress.,,2026-05-26T19:20:32.495767
+P015,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I need my medicine...'",Healthcare/medication,"'I need my medicine at 8 PM sharp, please do not forget.'",,"Here are a few natural completions depending on the context:
+
+**If requesting help:**
+""I need my medicine now, please help me get it.""
+
+**If explaining timing:**
+""I need my medicine—it's time for my next dose.""
+
+**If something's wrong:**
+""I need my medicine, I don't feel well.""
+
+Would you like me to suggest a completion for a more specific situation?",,"I need my medicine from the bathroom cabinet, can you please help me get it? It's the one with the blue label, and I need to take it with water.",,2026-05-26T19:20:45.387099
+P016,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I have an appointment and...'",Healthcare/access,'I will be unavailable tomorrow afternoon.',,"Here are a few possible completions depending on the context:
+
+- ""I have an appointment and **I need to leave by [time].**""
+- ""I have an appointment and **I will need help getting ready.**""
+- ""I have an appointment and **I wanted to let you know I won't be available.**""
+- ""I have an appointment and **I need a ride, please.**""
+
+Would any of these work, or would you like a different completion?",,"'I have an appointment and I will be back home by 3 pm, so please make sure to have lunch ready for me.'",,2026-05-26T19:20:54.401022
+P017,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'At school today I...'",School/work experience,'At school today I learned about the solar system and even got to help with a science experiment.',,"Here are a few natural completions depending on context:
+
+- ""At school today I had a really good day.""
+- ""At school today I learned something new.""
+- ""At school today I need help with something.""
+- ""At school today I had a problem I want to talk about.""
+
+**Would you like me to offer different options?** (For example: social, academic, requesting help, or sharing feelings)",,"At school today I saw my friends and we worked on a fun math project together. We also had a great time playing outside during recess, and I scored a goal in soccer.",,2026-05-26T19:21:01.470423
+P018,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I need more time to...'",School/work self-advocacy,"complete this task, as I want to ensure its accuracy and quality.",,"Here are a few natural completions depending on the context:
+
+- ""I need more time to **think about my answer.**""
+- ""I need more time to **finish what I'm saying.**""
+- ""I need more time to **process what you said.**""
+- ""I need more time to **complete this task.**""
+
+Would you like me to suggest options for a specific situation?",,"I need more time to finish this project, can we discuss a possible deadline extension.",,2026-05-26T19:21:09.182226
+P019,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'My teacher said...'",School/work instruction,"""My teacher said I did really well on my history project and that I should be proud of my work.""",,"Here are a few possible completions depending on the context:
+
+**Positive news:**
+""My teacher said I did a great job on my work today.""
+
+**Information sharing:**
+""My teacher said we have a test next week.""
+
+**Request/need:**
+""My teacher said I need to bring something from home.""
+
+Would you like me to offer different options, or is there a specific situation you're trying to communicate about?",,My teacher said that I did a great job on my project and that I should be very proud of myself. She also said that she's looking forward to seeing what I create next.,,2026-05-26T19:21:18.553591
+P020,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'Please stop...'",Self-advocacy/boundaries,"'Please stop speaking so fast, I need a bit more time to process what you're saying.'",,"Here are a few natural completions depending on context:
+
+- ""Please stop, I need a moment to respond.""
+- ""Please stop talking over me.""
+- ""Please stop, that's bothering me.""
+- ""Please stop and let me finish my thought.""
+
+**Which context fits best?** I can tailor it further if you let me know the situation (e.g., someone interrupting, unwanted touching, too much noise, etc.).",,'Please stop talking so I can have a turn to communicate.' This will help me to fully express my thoughts and needs.,,2026-05-26T19:21:28.521729
+P021,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I do not want...'",Self-advocacy/refusal,"'I do not want to go to the park today, I'd rather stay at home and read a book.'",,"Here are a few natural completions depending on the likely context:
+
+- ""I do not want **to do that right now.**""
+- ""I do not want **help with this, thank you.**""
+- ""I do not want **that one, please give me a different choice.**""
+- ""I do not want **to go yet.**""
+
+Would you like me to suggest options for a more specific situation?",,"I do not want to eat that, can I have something else instead.",,2026-05-26T19:21:38.714716
+P022,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I need help with...'",Self-advocacy/support,"'I need help with preparing dinner tonight, especially chopping vegetables and setting the oven.'",,"Here are a few natural completions depending on context:
+
+- ""I need help with **getting my wheelchair positioned closer to the table.**""
+- ""I need help with **understanding what was just said.**""
+- ""I need help with **opening this container.**""
+
+Would you like me to suggest completions for a more specific situation? Just let me know the context (meal time, medical appointment, classroom, etc.) and I can tailor it better.",,"I need help with carrying my groceries to the car, could you please assist me. If it's not too much trouble, I would also appreciate help unloading them at home.",,2026-05-26T19:21:49.502114
+P023,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I want to go to the store and...'",Community/access,buy some groceries for the week.,,"Here are a few natural completions depending on the likely intent:
+
+**Shopping-focused:**
+""I want to go to the store and **buy some groceries.**""
+
+**Social:**
+""I want to go to the store and **would like someone to come with me.**""
+
+**Specific need:**
+""I want to go to the store and **pick up a few things I need.**""
+
+Would you like me to adjust based on a specific context or offer different options?",,'I want to go to the store and buy some milk and eggs for breakfast.',,2026-05-26T19:21:57.018498
+P024,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'On the weekend I...'",Community/leisure,'On the weekend I usually enjoy going for long walks in the park and reading a good book at home.',,On the weekend I went out with friends and had a great time.,,"On the weekend I would like to go to the park and see my friends, and maybe we can have a picnic if the weather is nice.",,2026-05-26T19:22:04.650050
+P025,communication,AAC,sentence_prediction,"You are an assistive communication tool supporting a person who uses AAC. Complete this partial message in a natural, clear, and contextually appropriate way. Keep it to 1-2 sentences. Partial message: 'I need money for...'",Community/financial,'I need money for groceries and household bills.',,"Here are a few natural completions depending on the context:
+
+- ""I need money for **the bus fare home.**""
+- ""I need money for **lunch today.**""
+- ""I need money for **my medication at the pharmacy.**""
+- ""I need money for **the vending machine.**""
+
+Would you like me to suggest options for a specific situation?",,'I need money for groceries and to pay my bills that are due this week.',,2026-05-26T19:22:09.992436
+P026,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'hungry... food... now'",Daily needs/food,I am hungry and would like some food now.,,"Based on the fragment, here's a complete sentence that preserves the intended meaning:
+
+**""I'm hungry and would like some food now.""**
+
+---
+
+**Alternative options** (depending on context):
+
+- ""I'm feeling hungry — can I have something to eat?""
+- ""I need food now, please.""
+- ""I'm hungry and ready to eat.""
+
+---
+
+Would you like me to adjust the tone (more casual, more urgent, or as a request to someone specific)?",,"I'm feeling hungry, and I would like to have some food now.",,2026-05-26T19:22:17.204564
+P027,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'pain... leg... bad'",Daily needs/pain,I have severe pain in my leg.,,"Here's a complete sentence based on the fragment:
+
+**""I have bad pain in my leg.""**
+
+---
+
+**Alternative options** (depending on intended meaning):
+
+- ""My leg is hurting badly.""
+- ""I'm experiencing a lot of leg pain.""
+- ""The pain in my leg is really bad today.""
+
+---
+
+Would you like me to adjust the tone (more casual/formal) or add context (like timing or requesting help)?",,My leg is causing me a lot of bad pain.,,2026-05-26T19:22:24.917356
+P028,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'tired... sleep... please'",Daily needs/rest,"I am tired and would like to go to sleep, please.",,"Based on the fragment ""tired... sleep... please,"" here's a complete sentence that preserves the intended meaning:
+
+**""I'm feeling tired and would like to sleep now, please.""**
+
+---
+
+**Alternative interpretations** (in case the context differs):
+
+- ""I'm too tired — please let me sleep.""
+- ""Could you please help me get ready for sleep? I'm very tired.""
+- ""Please understand, I'm tired and need to rest.""
+
+Would any of these better capture what you mean, or would you like me to adjust?",,"I'm feeling very tired and would like to go to sleep, please.",,2026-05-26T19:22:32.235213
+P029,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'bathroom... help... now'",Daily needs/personal care,I need help in the bathroom right now.,,"Based on the fragment, here is a complete sentence that preserves the intended meaning:
+
+**""I need help getting to the bathroom right now.""**
+
+---
+
+*Alternative interpretations if needed:*
+- ""I need help in the bathroom now.""
+- ""Can someone help me to the bathroom, please?""
+
+---
+
+Would you like me to adjust the tone or urgency of this message?",,I need help getting to the bathroom right now.,,2026-05-26T19:22:41.904855
+P030,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'miss... wife... home'",Social/emotional longing,I miss my wife at home.,,"Based on the fragment ""miss... wife... home,"" here's a complete sentence that preserves the likely intended meaning:
+
+**""I miss my wife at home.""**
+
+Or alternatively, depending on context:
+
+- ""I miss my wife—I want to go home.""
+- ""My wife misses me at home.""
+- ""I miss being home with my wife.""
+
+---
+
+Would any of these capture what you're trying to say? If not, I can adjust—just give me another word or gesture to help me understand better.",,I miss my wife when I'm at home.,,2026-05-26T19:22:49.551374
+P031,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'happy... family... visit'",Social/emotional positive,I am happy that my family is visiting.,,"Based on the fragment ""happy... family... visit,"" here's a complete sentence that preserves the likely intended meaning:
+
+**""I'm happy that my family is coming to visit.""**
+
+---
+
+**Alternative interpretations:**
+
+- ""I had a happy visit with my family.""
+- ""I'm happy about the family visit.""
+- ""My family visit made me happy.""
+
+---
+
+Would any of these capture what you mean, or would you like to clarify further? I'm happy to adjust.",,I'm happy when my family comes to visit.,,2026-05-26T19:22:57.287888
+P032,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'scared... alone... night'",Social/emotional fear,I am scared and feel alone at night.,,"Here's a possible complete sentence based on the fragment:
+
+**""I feel scared when I'm alone at night.""**
+
+---
+
+**Alternative interpretations:**
+
+- ""I'm scared of being alone at night.""
+- ""The night scares me when I'm by myself.""
+
+---
+
+Would you like me to adjust the tone, add more detail, or offer other options? I can also simplify it further if needed.",,I get scared when I'm alone at night.,,2026-05-26T19:23:04.921583
+P033,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'angry... not fair... no'",Social/emotional frustration,I'm angry because it's not fair.,,"Based on the fragment, here's a complete sentence that preserves the intended meaning:
+
+**""I'm angry because this isn't fair, and I don't accept it.""**
+
+---
+
+**Alternative options** (depending on context):
+
+- ""I feel angry — this situation isn't fair, and I want to say no.""
+- ""This isn't fair and it makes me angry. I don't agree.""
+- ""I'm upset because what happened wasn't fair.""
+
+---
+
+Would you like me to adjust the tone (softer/stronger) or offer more options? I can also help phrase this for a specific situation if you'd like to share more context.",,"I'm feeling angry because I think this situation is not fair, and I'm saying no to it.",,2026-05-26T19:23:13.205988
+P034,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'doctor... medicine... confused'",Healthcare/medical information,The person is confused about the medication prescribed by the doctor.,,"Based on the fragment, here are a few possible interpretations:
+
+**Most likely meanings:**
+
+- ""I'm confused about the medicine the doctor prescribed.""
+- ""I need to talk to the doctor because I'm confused about my medicine.""
+- ""The doctor's instructions about the medicine are confusing to me.""
+
+**Alternative interpretation:**
+
+- ""The medicine is making me feel confused, and I want to tell the doctor.""
+
+---
+
+**Would any of these capture what you mean?** If not, I can help narrow it down:
+
+- Is the confusion about **how to take** the medicine?
+- Is the medicine **causing** confusion as a side effect?
+- Do you need to **contact** the doctor about this?",,"I'm confused about the medicine the doctor prescribed for me.
+
+This sentence aims to capture the speaker's intended meaning by incorporating the key elements from the fragmented message: ""doctor,"" ""medicine,"" and ""confused."" It provides a clear and respectful expression of the speaker's concern, facilitating effective communication.",,2026-05-26T19:23:22.210493
+P035,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'hospital... appointment... tomorrow'",Healthcare/access,I have a hospital appointment tomorrow.,,"Based on the fragment, here's a complete sentence:
+
+**""I have a hospital appointment tomorrow.""**
+
+---
+
+**Alternative interpretations** (in case the context differs):
+
+- ""I need to go to the hospital for an appointment tomorrow.""
+- ""Can you help me get to my hospital appointment tomorrow?""
+- ""I want to remind you about my hospital appointment tomorrow.""
+
+---
+
+Would any of these work, or would you like me to adjust the meaning? For example, is this about:
+- **Asking for a ride?**
+- **Sharing information?**
+- **Requesting help to prepare?**",,I have an appointment at the hospital tomorrow.,,2026-05-26T19:23:31.219766
+P036,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'pain... chest... help'",Healthcare/emergency,I am experiencing chest pain and need help.,,"Based on the fragment ""pain... chest... help,"" here is a complete sentence:
+
+**""I am having chest pain and need help.""**
+
+---
+
+**Alternative options depending on context:**
+
+- ""I'm experiencing pain in my chest — please help me.""
+- ""My chest hurts and I need assistance.""
+
+---
+
+⚠️ **Important note:** This message indicates a potential medical emergency. If you are supporting this person in real-time, please consider calling emergency services (911 or local equivalent) immediately, as chest pain can signal a serious cardiac event.",,I'm experiencing chest pain and I need your help.,,2026-05-26T19:23:39.399140
+P037,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'work... boss... problem'",School/work challenge,There is a problem at work with my boss.,,"Based on the fragment ""work... boss... problem,"" here's a complete sentence that preserves the likely intended meaning:
+
+**""I'm having a problem with my boss at work.""**
+
+---
+
+**Alternative interpretations (if this doesn't feel right):**
+
+- ""There's a problem at work that I need to tell my boss about.""
+- ""My boss is causing problems at work.""
+- ""I need to talk to my boss about a work problem.""
+
+---
+
+Would any of these capture what you mean? You can also nod, point, or add another word if you'd like to clarify.",,I'm having a problem with my boss at work.,,2026-05-26T19:23:48.177415
+P038,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'school... teacher... help'",School/work support,The teacher at the school provides help.,,"Based on the fragment ""school... teacher... help,"" here's a complete sentence that preserves the likely intended meaning:
+
+**""I need help from the teacher at school.""**
+
+---
+
+**Alternative interpretations (in case the context differs):**
+
+- ""The teacher at school helped me.""
+- ""Can you help me contact my child's teacher at school?""
+- ""I want to help the teacher at school.""
+
+---
+
+Would you like me to adjust the sentence, or does one of these capture what you meant?",,I would like to ask my teacher at school for help.,,2026-05-26T19:23:56.041751
+P039,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'no... stop... please'",Self-advocacy/boundaries,"Please, I would like you to stop.",,"Based on this fragment, here are a few possible interpretations of what the person may be trying to communicate:
+
+**Most likely options:**
+
+1. ""Please stop doing that.""
+2. ""No, please stop.""
+3. ""I would like you to stop, please.""
+
+**Before confirming, I'd suggest checking with the person:**
+
+This fragment could indicate distress or discomfort. It would be important to:
+- Pause and give them time
+- Check if they're okay
+- Ask yes/no questions to clarify (e.g., ""Do you want me to stop what I'm doing?"" or ""Is something bothering you?"")
+
+Would you like me to offer additional interpretations, or is there more context about the situation?",,"Please stop, I'd rather not continue.",,2026-05-26T19:24:03.918054
+P040,communication,aphasia,sentence_prediction,"You are an assistive communication tool supporting a person with aphasia who has difficulty with word retrieval and sentence formation. Based on the following fragmented message, generate a complete, natural, and respectful sentence that preserves the speaker's intended meaning. Fragment: 'store... money... need'",Community/independence,I need to go to the store because I need money.,,"Based on the fragment ""store... money... need,"" here are a few possible interpretations:
+
+**Most likely meaning:**
+""I need money to go to the store.""
+
+**Other possibilities:**
+- ""I need to go to the store and get money.""
+- ""I need money from the store."" (perhaps a refund or ATM)
+- ""The store needs my money."" (payment is due)
+
+---
+
+Would any of these capture what you mean? You can point to the right one, or give me another word to help clarify. 👍",,I think I need to go to the store because I need some money.,,2026-05-26T19:24:13.371662
+P041,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'Take one tablet orally twice daily with or without food. Do not exceed the recommended dosage. Consult your physician if symptoms persist or worsen.'",Healthcare/medication instructions,"Take one pill two times a day. You can eat or not eat with it. Do not take more than told. If you still feel sick or feel worse, talk to your doctor.",,"## How to Take Your Medicine
+
+**Take 1 pill by mouth 2 times each day.**
+
+You can take it with food or without food.
+
+**Do not take more pills than this.**
+
+Taking too many pills can hurt you.
+
+**Talk to your doctor if:**
+- You still feel sick
+- You start feeling worse",,"Take one pill in the morning.
+Take one pill at night.
+Eat food or not.
+Do not take too much.
+Tell the doctor if sick.",,2026-05-26T19:24:56.592485
+P042,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'The patient presents with moderate hypertension. Lifestyle modifications including dietary sodium restriction and regular aerobic exercise are recommended prior to initiating pharmacological intervention.'",Healthcare/medical diagnosis,The person has high blood pressure. They should eat less salt and exercise more before taking medicine.,,"## Simplified Version
+
+Your blood pressure is too high.
+
+Here is what you can do to feel better:
+
+**Eat less salt.**
+- Do not add salt to your food.
+- Eat fewer chips and canned soups.
+
+**Move your body every day.**
+- Take walks.
+- Dance or swim.
+
+Try these things first.
+
+If they do not help, the doctor may give you medicine later.",,"This person has high blood pressure. 
+They should eat less salt. 
+They should exercise often. 
+This helps before taking medicine.",,2026-05-26T19:25:05.711727
+P043,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'Prior to your surgical procedure you must refrain from consuming food or beverages for a minimum of eight hours. Inform your anesthesiologist of all current medications.'",Healthcare/pre-surgery,"Before your surgery, do not eat or drink anything for at least eight hours. Tell your sleep doctor about all your medicines.",,"## Before Your Surgery
+
+**Do not eat or drink for 8 hours before your surgery.**
+
+Your stomach needs to be empty. This keeps you safe during surgery.
+
+**Tell your doctor about all your medicines.**
+
+This means pills, vitamins, and anything else you take. Your doctor needs to know so they can help you.",,"Do not eat or drink before surgery.
+Tell the doctor about your medicines.",,2026-05-26T19:25:13.873250
+P044,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'If you are experiencing a mental health crisis please contact the national crisis helpline or present to the emergency department of your nearest hospital for immediate support.'",Healthcare/mental health,"If you are feeling very bad, call the help phone line. You can also go to the closest hospital. They can help you right away.",,"## Simplified Text
+
+**Are you feeling very upset or scared right now?**
+
+**You can get help.**
+
+**Call the crisis helpline.** They help people who feel very bad.
+
+**Or go to the hospital emergency room.** Tell them you need help now.
+
+**Someone will help you feel better.**",,"I am upset. Call for help now. 
+Go to the hospital. 
+They can help you.",,2026-05-26T19:25:21.181184
+P045,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'The rehabilitation program consists of a multidisciplinary approach encompassing occupational therapy physiotherapy and speech-language pathology to maximize functional independence.'",Healthcare/rehabilitation,"The help program has different parts. It includes work therapy, body movement therapy, and speech therapy. This helps people do things on their own.",,"## Simplified Version
+
+**You will get help from different people to feel better.**
+
+**One person helps you do daily tasks.** Things like getting dressed and cooking.
+
+**Another person helps your body move better.** They help you walk and get stronger.
+
+**A third person helps you talk and swallow.** They make speaking easier.
+
+**All these people work together.** They want to help you do things on your own.",,"We help you get better. 
+We use exercises and talking therapy. 
+This helps you do things by yourself.",,2026-05-26T19:25:29.662722
+P046,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'Pursuant to Section 7 of the Individual Education Plan accommodations including extended time on assessments preferential seating and access to assistive technology have been authorized.'",Education/IEP accommodations,Your special learning plan says you can have extra time for tests. You can sit where you learn best. You can also use special tools to help you learn.,,"## Your Learning Help Plan
+
+**You have a special plan to help you at school.**
+
+Here is what you will get:
+
+**More time on tests**
+You can take longer to finish your tests.
+
+**A good seat**
+You will sit in a spot that helps you learn better.
+
+**Tools to help you**
+You can use computers or other tools to help you do your work.
+
+**These things are allowed.**
+Your teachers know about this plan.
+They will help you use these things.",,"We give you extra time to take tests.
+You sit where you can see well.
+You use special tools to help you.",,2026-05-26T19:25:39.797337
+P047,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'Students who fail to submit assignments by the stipulated deadline will incur a grade penalty of 10% per day unless prior arrangements have been made with the course instructor.'",Education/assignment policy,"If you don't turn in your homework on time, your grade will go down. For each day it's late, you lose 10%. But if you talk to your teacher before it's due, they might let you turn it in late without losing points.",,"## Simplified Version
+
+**Turn in your work on time.**
+
+**If your work is late, you will lose points.**
+
+**You lose 10 points for each day it is late.**
+
+**Talk to your teacher before the due date if you need more time.**
+
+**Your teacher may give you extra time if you ask first.**",,"Turn in work on time. 
+Late work gets a bad grade. 
+Tell teacher if you're late.",,2026-05-26T19:25:51.115886
+P048,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'The school anti-bullying policy defines bullying as repeated intentional behavior that causes harm humiliation or distress. Incidents should be reported to a trusted adult or via the anonymous online portal.'",Education/anti-bullying policy,"The school's no-bullying rule says bullying is when someone hurts or upsets you again and again on purpose. If this happens, tell a grown-up you trust or use the secret website.",,"## Anti-Bullying Rules at School
+
+**What is bullying?**
+
+Bullying is when someone is mean to you again and again.
+
+They do it on purpose.
+
+It can hurt your body.
+
+It can hurt your feelings.
+
+It can make you feel sad or scared.
+
+**What should you do if someone bullies you?**
+
+Tell a grown-up you trust.
+
+This could be a teacher, parent, or school helper.
+
+You can also report it on the school website.
+
+No one will know it was you who told.
+
+**Remember:** It is always okay to ask for help.",,"We don't like bullying. 
+Bullying hurts people. 
+Tell a teacher if you see bullying. 
+You can tell online too.",,2026-05-26T19:25:58.330207
+P049,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'To be eligible for the scholarship applicants must demonstrate academic merit financial need and active participation in extracurricular activities as verified by institutional records.'",Education/scholarship eligibility,"To get the scholarship, you need to show three things. 
+
+First, you need good grades. 
+
+Second, you need to show you don't have enough money for school. 
+
+Lastly, you need to be involved in activities outside of class. 
+
+Your school will check these things.",,"## Simplified Text
+
+**You can get money for school if you:**
+
+• You get good grades in your classes
+
+• You need help paying for school
+
+• You do activities outside of class (like sports or clubs)
+
+**Your school will check these things are true.**
+
+---
+
+## Key Changes Made
+
+| Original Term | Simplified Version |
+|---|---|
+| Eligible | Can get |
+| Scholarship | Money for school |
+| Demonstrate academic merit | Get good grades |
+| Financial need | Need help paying |
+| Extracurricular activities | Activities outside of class |
+| Verified by institutional records | Your school will check |",,"We help students with good grades.
+We help students who need money.
+We help students in clubs.
+School records prove this.",,2026-05-26T19:26:07.839691
+P050,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'Cognitive behavioral therapy is a structured psychological intervention that aims to modify maladaptive thought patterns and associated behaviors to improve emotional regulation.'",Education/mental health,Cognitive behavioral therapy is like a class for your mind. It helps you change bad thoughts and habits. This helps you control your feelings better.,,"# Simplified Text
+
+**This is a type of talking therapy.**
+
+**You meet with a helper to talk about your feelings.**
+
+**Sometimes we think bad thoughts about ourselves.**
+
+**These thoughts can make us feel sad or worried.**
+
+**The helper teaches you new ways to think.**
+
+**You learn to change bad thoughts into better ones.**
+
+**This helps you feel happier and calmer.**
+
+**You also learn new things to do when you feel upset.**",,"We help you think and feel better.
+We change bad thoughts and behaviors.
+You learn to control your emotions.",,2026-05-26T19:26:21.600180
+P051,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'The Disability Discrimination Act prohibits direct and indirect discrimination against individuals with a disability in the areas of employment education and access to goods and services.'",Legal/disability rights,"The law says no one can treat you unfairly because of your disability. This includes your job, school, and buying things.",,"# The Disability Discrimination Act
+
+This is a law that protects people with disabilities.
+
+**What does this law do?**
+
+It says people cannot treat you badly because of your disability.
+
+This is called discrimination.
+
+**Where does this law help you?**
+
+• **At work** - Bosses must treat you fairly when you apply for jobs.
+
+• **At school** - Schools must let you learn like everyone else.
+
+• **In shops and services** - Stores and businesses must serve you fairly.
+
+**What does ""treat you badly"" mean?**
+
+• Someone says no to you just because of your disability.
+
+• Rules that make things harder for you but not for others.
+
+**The main idea:**
+
+You have the right to be treated the same as everyone else.",,"We protect people with disabilities.
+They can work and learn.
+They can buy things and use services.
+It's not fair to treat them badly.",,2026-05-26T19:26:34.853913
+P052,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'As a participant in this research study you have the right to withdraw consent at any time without prejudice to your ongoing care or any other entitlements.'",Legal/research consent,You are part of this study. You can choose to stop at any time. This won't change how we care for you. You won't lose anything else you have a right to.,,"## Simplified Version
+
+You are helping with this study.
+
+You can stop being in the study at any time.
+
+You do not have to give a reason.
+
+Nothing bad will happen if you stop.
+
+You will still get the same care.
+
+You will still get all your services.
+
+It is your choice.",,"You can stop at any time. 
+Your care will not change. 
+You can still get help.",,2026-05-26T19:26:44.465599
+P053,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'In accordance with the organization grievance policy employees wishing to file a formal complaint must submit documentation to the Human Resources department within 10 business days of the incident.'",Legal/workplace rights,"If you are upset at work, tell the Human Resources team. You have 10 days to do this. Write down what happened.",,"## Simplified Text
+
+**Do you have a problem at work?**
+
+You can make a complaint.
+
+Here is what to do:
+
+1. **Write down what happened.**
+
+2. **Give your paper to the HR office.** This is the office that helps workers.
+
+3. **Do this soon.** You have 10 work days. That means about 2 weeks.
+
+---
+
+**Need help?** Ask someone you trust to help you write it down.",,"Tell us if something is wrong. 
+You have 10 days to report it. 
+Give the paper to the HR person.",,2026-05-26T19:26:51.477986
+P054,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'Your lease agreement will automatically renew on a month-to-month basis unless written notice of termination is provided no less than 30 days prior to the lease expiration date.'",Legal/housing tenancy,"Your rent contract will keep going every month. If you want to stop it, write a note. Do this 30 days before the contract ends.",,"## Simplified Version:
+
+You rent this home. Your rental deal will keep going each month.
+
+**Do you want to move out?**
+
+You must tell us in writing. Tell us 30 days before you want to leave. That means about one month ahead of time.
+
+**If you don't tell us, you keep renting.**
+
+---
+
+**What ""in writing"" means:**
+- A letter
+- An email
+- A signed form
+
+Do you need help? Ask someone you trust to help you write it.",,"Your lease will continue. 
+Tell us 30 days before you leave. 
+Or it will keep going.",,2026-05-26T19:27:01.743290
+P055,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'In the event that you are involved in a motor vehicle accident you are legally required to exchange insurance information and report the incident to law enforcement if injuries are sustained.'",Legal/obligation,"If you have a car accident, you must share your insurance details. If someone is hurt, tell the police.",,"# What to Do If You Get in a Car Crash
+
+**You must do these things:**
+
+1. **Share your insurance card** with the other driver.
+
+2. **Get their insurance card** too.
+
+3. **Call the police** if anyone is hurt.
+
+This is the law. You have to do it.",,"You crash a car. 
+Tell police and show insurance. 
+Help if someone is hurt.",,2026-05-26T19:27:10.709736
+P056,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'Transit services will be temporarily suspended on Route 12 due to infrastructure maintenance works. Alternative bus services will operate via Routes 14 and 16 during this period.'",Community/transport,Buses won't run on Route 12 for a while. They are fixing the road. You can take buses on Route 14 and 16 instead.,,"## Simple Version
+
+**Bus Route 12 is closed for now.**
+
+Workers need to fix the roads and pipes.
+
+This will not last forever.
+
+**You can still get where you need to go.**
+
+Take Bus 14 or Bus 16 instead.
+
+These buses will help you travel.
+
+---
+
+**What to do:**
+- Look for Bus 14 or Bus 16
+- Ask the bus driver if you need help",,"Buses stop on Route 12. 
+We fix the road.
+Take bus 14 or 16 instead.",,2026-05-26T19:27:17.812376
+P057,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'Voting is your democratic right. To cast your ballot bring valid government issued photo identification to your designated polling station on election day between 7AM and 8PM.'",Community/civic participation,You can vote. It's your right. Bring a photo ID from the government. Go to your voting place on election day. You can vote from 7 in the morning until 8 at night.,,"# Voting Made Simple
+
+**You can vote. It is your right.**
+
+## What to bring
+
+Bring an ID card with your photo on it.
+
+The ID must be from the government.
+
+A driver's licence works well.
+
+## Where to go
+
+Go to your voting place.
+
+A card in the mail tells you where to go.
+
+## When to go
+
+Go on voting day.
+
+The doors open at 7 in the morning.
+
+The doors close at 8 at night.
+
+You can go any time between 7 and 8.",,"You can vote. 
+Bring a photo ID. 
+Go to the voting place. 
+Voting is from 7AM to 8PM.",,2026-05-26T19:27:27.538384
+P058,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'The community garden allotment scheme is open to all residents. Applicants are assessed on a first come first served basis with priority given to households with no private outdoor space.'",Community/participation,"The community garden is open to everyone. People who ask first get a spot first. If you don't have a garden at home, you get a spot quicker.",,"## Community Garden Spots
+
+**We have garden spots for people in our area.**
+
+You can grow plants and vegetables there.
+
+**Anyone who lives here can ask for a spot.**
+
+We give spots to people who ask first.
+
+People with no garden at home get a spot before others.
+
+**Want a spot? Tell us! We will add your name to the list.**",,"We have a garden for people to use.
+It is open to all.
+First come, first served.
+People with no yard go first.",,2026-05-26T19:27:37.124403
+P059,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'Recycling contamination occurs when non recyclable materials are placed in the recycling bin. This compromises the entire load and increases processing costs for the municipality.'",Community/environment,Recycling gets dirty when we put things that can't be recycled in the bin. This makes it harder and more expensive to sort out.,,"## Recycling Made Simple
+
+**Put only the right things in your recycling bin.**
+
+Sometimes people put wrong items in the recycling bin.
+
+This is a problem.
+
+Wrong items can ruin all the good recycling.
+
+Then workers have to throw everything away.
+
+This costs your town more money.
+
+**What can you do?**
+
+Check before you put something in the bin.
+
+Ask for help if you are not sure.
+
+Only recycle clean bottles, cans, and paper.",,"Bad things go in the recycling bin.
+This makes a big mess.
+It costs more money.",,2026-05-26T19:27:46.606347
+P060,cognitive,intellectual_disability,text_simplification,"Simplify the following text for a person with an intellectual disability. Use short sentences (under 15 words), common everyday words, and active voice. Avoid jargon, acronyms, and abstract language. Text: 'To be eligible for supported accommodation applicants must demonstrate a verified disability require daily living assistance and have current support coordinator involvement.'",Community/housing services,"To live in a special home, you need to show you have a disability. You also need help every day. Plus, you need a support person who works with you now.",,"## Simplified Text
+
+**Who can live in our supported homes?**
+
+You need three things:
+
+1. **You have a disability.** A doctor or specialist has said this is true.
+
+2. **You need help every day.** This means help with things like cooking, cleaning, or getting dressed.
+
+3. **You have a support worker.** This person helps you make plans and choices.
+
+---
+
+**Want to apply?**
+
+Talk to your support worker. They can help you.",,"We help people with disabilities. 
+You need help each day. 
+Someone must support you now.",,2026-05-26T19:27:56.481999

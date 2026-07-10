@@ -1,0 +1,8 @@
+LLM Assistive Task Evaluation
+Evaluation complete
+
+All done, {{ evaluator.name }}!
+You have rated all {{ total }} prompts.
+Click below to download your ratings and email the file to the researcher.
+
+⬇ Download my ratings CSV

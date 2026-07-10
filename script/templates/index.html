@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM Evaluation — Evaluator Setup</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1>LLM Assistive Task Evaluation</h1>
+    <p>Disability-Inclusive AI Research &nbsp;·&nbsp; Blinded Comparative Evaluation &nbsp;·&nbsp; 60 Prompts</p>
+  </div>
+  <div class="card">
+    <h2>Before you begin</h2>
+    <p class="subtitle">Please enter your details. This will be included in your ratings file.</p>
+    {% if error %}
+      <div class="error-msg">{{ error }}</div>
+    {% endif %}
+    <form method="POST" action="/">
+      <div class="field">
+        <label for="name">Full name <span class="required">*</span></label>
+        <input type="text" id="name" name="name" placeholder="e.g. Dr. Jane Smith" required>
+      </div>
+      <div class="field">
+        <label for="expertise">Area of expertise <span class="required">*</span></label>
+        <select id="expertise" name="expertise" required>
+          <option value="">— Select your area —</option>
+          {% for option in expertise_options %}
+            <option value="{{ option }}">{{ option }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="field">
+        <label for="institution">Institution <span class="optional">(optional)</span></label>
+        <input type="text" id="institution" name="institution" placeholder="e.g. University of...">
+      </div>
+      <div class="field">
+        <label>What to expect</label>
+        <ul class="info-list">
+          <li>Rate 60 LLM-generated outputs across 5 dimensions</li>
+          <li>Models are labelled A, B, C — identities are blinded</li>
+          <li>Estimated time: 90–120 minutes</li>
+          <li>You can go back and change ratings at any time</li>
+          <li>Your ratings download as a CSV file at the end</li>
+        </ul>
+      </div>
+      <button type="submit" class="btn-primary">Start evaluation →</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

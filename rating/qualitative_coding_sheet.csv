@@ -1,0 +1,13 @@
+Note_ID,Rater,Prompt,Model_Referenced,Note_Text,Primary_CIF_Dimension,Secondary_CIF_Dimension,Justification
+N01,Rater_2,0,Groq (Model C),"Model C gives a longer, more elaborate completion with two sentences. It may be slightly too assumptive about what the person wants and adds detail the user never specified.",,,
+N02,Rater_9,0,Claude (Model B),"Model B did not complete the sentence, it just gave more options instead. Model C gave a normal completion but added more context to it.",,,
+N03,Rater_9,2,Claude (Model B),Model B provides series of options rather than sticking to one request.,,,
+N04,Rater_9,28,Claude (Model B),"The rest of the models seem to understand the urgency but Model B is not giving answer based on context dependency, an urgent situation does not require other options.",,,
+N05,Rater_13,39,Claude (Model B),Model 2 (the model that provides a variety of answers) tends to allow greater accuracy across the five dimensions.,,,
+N06,Rater_14,3,Groq (Model C),The two parts of Model C are inconsistent.,,,
+N07,Rater_14,7,Groq (Model C),I think the second sentence in Model C is not necessary.,,,
+N08,Rater_14,25,General,More casual will work just fine.,,,
+N09,Rater_14,29,Groq (Model C),He should not be missing his wife if he is home. It should be along the lines of the person missing his wife and wanting to go home instead.,,,
+N10,Rater_15,1,Claude (Model B),"If accuracy means the output should be factually correct and true to the prompt, then rating Model B is quite dicey. The prompt says 1-2 sentences but B always provides about 4 options and 5-6 sentences. Model B is probably going to be the most accurate for the user because it gives options unlike the others, but that is against the prompt given and rating rubric.",,,
+N11,Rater_15,4,Claude (Model B),Empathy means respecting the users dignity and autonomy which means their ability to make choices or initiate conversation without someone taking over from them. Option B does that because now they have a range of sentences to select from unlike the rest that does not really give them a choice. Empathy from Model A and C is not that great when it comes to AAC.,,,
+N12,Rater_15,6,Claude (Model B),"I fear that my idea of accuracy is wrong because Model C does not seem accurate if it is based on trying to figure out the exact needs of the user. Since the prompt however said 1-2 sentences and to keep it natural and clear, then Model C is accurate in that regard and Model B is not.",,,
