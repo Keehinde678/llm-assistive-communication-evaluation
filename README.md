@@ -17,8 +17,8 @@ Intellectual Disabilities; text simplification tasks
 Performance is evaluated across five dimensions grounded in assistive technology (AT) principles, 
 constituting the Communication Inclusion Framework (CIF):
 ### Authors
-- Kehinde Soetan (lead researcher)
-- Rhoda Oladosu — [@RhodaOladosu]
+- Kehinde Soetan
+- Rhoda Oladosu
 - Precious Aforkeoghene
 - Jesujoba Olanrewaju
 
