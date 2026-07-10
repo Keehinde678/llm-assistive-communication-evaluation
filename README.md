@@ -9,9 +9,9 @@ intellectual disability contexts.
 The study examines model performance across three disability-specific contexts:
 
 
-Augmentative and Alternative Communication (AAC) — sentence prediction tasks
-Aphasia — sentence prediction tasks
-Intellectual Disabilities — text simplification tasks
+Augmentative and Alternative Communication (AAC); sentence prediction tasks
+Aphasia; sentence prediction tasks
+Intellectual Disabilities; text simplification tasks
 
 
 Performance is evaluated across five dimensions grounded in assistive technology (AT) principles, 
