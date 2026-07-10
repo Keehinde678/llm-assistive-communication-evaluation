@@ -34,7 +34,7 @@ constituting the Communication Inclusion Framework (CIF):
 - /analysis — Bayesian analysis notebook
 - /outputs — all figures from the paper
 - /rating — rating sheets
-  - /scripts — query models, templates
+- /scripts — query models, templates
 - /qualitative — CIF coding sheet
 - /prompts — prompt library
 
